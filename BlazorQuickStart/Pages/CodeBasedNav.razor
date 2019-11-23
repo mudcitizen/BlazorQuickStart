@@ -1,0 +1,11 @@
+﻿@page "/codebasednav"
+@inject NavigationManager NavigationManager
+<h1>Code-base Navigation</h1>
+<button @onclick="Navigate">Click to launch Counter</button>
+@code {
+
+    void Navigate() {
+        NavigationManager.NavigateTo("counter");
+    }
+
+}

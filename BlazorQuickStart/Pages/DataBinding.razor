@@ -1,0 +1,33 @@
+﻿@page "/databinding"
+
+<h1>Data Binding example</h1>
+<hr />
+
+<h3>One way data binding</h3>
+<p>@oneWayData</p>
+
+<hr />
+
+<h3>Two way data binding</h3>
+Enter your Age:
+<input type="text" @bind="age" />
+<br />
+<p>You are @age years old.</p>
+<p>Today's Date is: <input @bind="Today" @bind:format="MM-dd-yyyy" /></p>
+
+@functions{
+
+    DateTime Today = DateTime.Now;
+    string oneWayData = "This is a sample string";
+
+    int _age = 14;
+    int age
+    {
+        get { return _age; }
+        set
+        {
+            _age = value;
+        }
+
+    }
+}

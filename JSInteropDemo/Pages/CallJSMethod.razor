@@ -1,0 +1,19 @@
+﻿@page "/calljs"
+@inherits CallJSMethodBase
+
+@{ 
+    string wtf = message;
+}
+
+<h3>Invoking a JS method WITHOUT PARAMETERS from .NET</h3>
+<br />
+<button class="btn btn-primary" @onclick="CallJSMethod">Click Me !!</button>
+
+<hr />
+<h3>Invoking a JS method WITH PARAMETERS from .NET</h3>
+<br />
+
+<input class="col-sm-3" @bind="message" />
+<br />
+<br />
+<button class="btn btn-default" @onclick="CallJSMethodWithParameters">Show Prompt</button>

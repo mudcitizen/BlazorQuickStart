@@ -6,5 +6,9 @@
 
     showPrompt: (message) => {
         alert("You entered : " + message);
+    },
+
+    showValue: (eleRef) => {
+        alert(eleRef.value);
     }
 };

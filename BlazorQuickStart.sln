@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29411.138
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorQuickStart", "BlazorQuickStart\BlazorQuickStart.csproj", "{70668F45-C9B4-4E3F-8F5E-E84162F7FDBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSInteropDemo", "JSInteropDemo\JSInteropDemo.csproj", "{90A7572A-0D02-4927-87D7-BD49AC053614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSInteropDemo", "JSInteropDemo\JSInteropDemo.csproj", "{90A7572A-0D02-4927-87D7-BD49AC053614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

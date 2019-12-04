@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace JSInteropDemo.Pages
 {
@@ -25,11 +26,11 @@ namespace JSInteropDemo.Pages
 
       
         protected void CallJSMethod() {
-            _jsRuntime.InvokeAsync<bool>("showAlertBox");
+            _jsRuntime.InvokeAsync<bool>("MyStuff.showAlertBox");
         }
         protected void CallJSMethodWithParameters()
         {
-            _jsRuntime.InvokeAsync<bool>("showPrompt",message);
+            _jsRuntime.InvokeAsync<bool>("MyStuff.showPrompt", message);
         }
     }
 }

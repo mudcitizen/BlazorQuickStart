@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JSInteropDemo.Extensions;
 
 namespace JSInteropDemo.Pages
 {
@@ -14,9 +15,9 @@ namespace JSInteropDemo.Pages
         [Inject]
         protected IJSRuntime _jsRunTime { get; set; }
 
-        protected void GetInputValue()
+        async protected void HaveSJShowValueAsync()
         {
-            _jsRunTime.InvokeVoidAsync("MyStuff.showValue", inputRef);
+            await inputRef.ShowValueAsync(_jsRunTime);
         }
 
     }

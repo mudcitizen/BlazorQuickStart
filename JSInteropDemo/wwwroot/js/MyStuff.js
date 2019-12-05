@@ -10,5 +10,11 @@
 
     showValue: (eleRef) => {
         alert(eleRef.value);
+    },
+
+    sayHello: function (dotnetHelper) {
+        return dotnetHelper.invokeMethodAsync('SayHello')
+            .then(r => console.log(r));
     }
+
 };
